@@ -96,6 +96,7 @@ open class LocationPickerViewController: UIViewController {
 	
 	lazy var searchController: UISearchController = {
 		let search = UISearchController(searchResultsController: self.results)
+		search.searchBar.barStyle = .black
 		search.searchResultsUpdater = self
 		search.hidesNavigationBarDuringPresentation = false
 		return search
